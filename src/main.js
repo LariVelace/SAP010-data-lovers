@@ -76,7 +76,7 @@ export const buildCard = (id, pokemon) => {
 
   const pokemons = document.getElementById(id);
   const cardPokemon = document.createElement('div');
-  cardPokemon.classList.add("card");
+  cardPokemon.classList.add("card", "fontCard");
 
   cardPokemon.innerHTML = `
     <img id="imagePokemon" alt="Image Pokemon" src="${pokemon.img}">
