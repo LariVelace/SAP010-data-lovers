@@ -122,7 +122,7 @@ const buildCard = (pokemon) => {
         </div>
         <img id="imagePokemon" alt="Image Pokemon" src=${pokemon[i].img}>
       </div>
-        <a  href="cardDetails.html" target = "_blank"><p id=${pokemon[i].num} class="saiba-mais">saiba mais</p></a>
+        <a><p id=${pokemon[i].num} class="saiba-mais">saiba mais</p></a>
     </div>`;
 
       cardPokemon.innerHTML = showDataPokemon;
@@ -163,19 +163,20 @@ function teste(event) {
   console.log(event);
   console.log(event.target);
   console.log(event.target.id);
+  return window.location.href = `cardDetails?id=${event.target.id}`
 }//endTeste
 
 let url = document.URL;
 console.log(url)
 if (url === "http://localhost:3000/") {
   console.log(document.URL)
-  let cards = document.querySelectorAll("#pokemons a");
+  let cards = document.querySelectorAll("#pokemons .saiba-mais");
   window.addEventListener("load", () => {
     buildCard(data.pokemon);
-    cards = document.querySelectorAll("#pokemons a");
+    cards = document.querySelectorAll("#pokemons .saiba-mais");
     if (cards) {
       cards.forEach(card => {
-        card.addEventListener("click", teste)
+        card.addEventListener("click", (e) => teste(e))
       })
     }//endIf
   });//endAddEventListener
@@ -189,6 +190,7 @@ if (url === "http://localhost:3000/statistic") {
   const curiosidades = document.querySelector(".curiosidades");
   curiosidades.style.color = "#00478C"
 }
+
 
 if (url === "http://localhost:3000/cardDetails") {
   const details = document.querySelector(".details");
