@@ -638,3 +638,34 @@ a {
   }
 }
 
+#cardDetailsMain{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+#cardDetails{
+  background-color: lightblue;
+  padding: 2%;
+  max-width: 800px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+#cardHeader{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+#pokemonName{
+  width: 60%;
+}
+
+#pokemonNumber{
+  width: 40%;
+  text-align: right;
+  font-size: 14px;
+}
