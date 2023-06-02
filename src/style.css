@@ -649,10 +649,13 @@ a {
 #cardDetails {
   background-color: lightblue;
   max-width: 400px;
+  font-family: 'Carter One';
   border-radius: 30px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  color: #F7F1E3;
+  font-size: larger;
 }
 
 #cardHeader {
@@ -680,11 +683,12 @@ a {
 #pokemonType div {
   border-radius: 7px;
   padding: 2px;
-  max-width: 75px;
+  max-width: 55px;
   width: 75px;
   margin-right: 4px;
   text-align: center;
   color: white;
+  font-size: 14px;
 }
 
 .tab {

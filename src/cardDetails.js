@@ -9,8 +9,8 @@ const pokemon = data.pokemon.filter((pk) => {
     return pk.num === id;
 })[0];
 
-console.log(id);
-console.log(pokemon);
+let url = document.baseURI;
+console.log(url)
 
 const pokemonCard = document.getElementById("cardDetails");
 const pokemonStyle = stylesPokemon.filter((style) =>{
