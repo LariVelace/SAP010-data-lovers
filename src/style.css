@@ -243,6 +243,7 @@ h1::first-letter {
   margin: 10px;
   padding: 5px;
   width: 80%;
+  cursor: pointer;
 }
 
 a {
@@ -694,10 +695,11 @@ a {
 .tab button {
   background-color: inherit;
   float: left;
+  border: none;
+  border-radius: 1px;
   font-family: 'Inter';
   font-size: 15px;
   font-weight: bolder;
-  border: none;
   outline: none;
   cursor: pointer;
   padding: 14px 16px;
@@ -710,7 +712,7 @@ a {
 }
 
 .tab button.active {
-  background-color: #ccc;
+  border-bottom: 3px solid #34ACE0;
 }
 
 .tabcontent {
