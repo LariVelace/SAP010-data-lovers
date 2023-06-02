@@ -168,7 +168,7 @@ function teste(event) {
 
 let url = window.location.pathname;
 console.log(url)
-if (url === "/") {
+if (url === "/" || url === "/SAP010-data-lovers/src/index.html" || url === "/SAP010-data-lovers/src/") {
   console.log(document.URL)
   let cards = document.querySelectorAll("#pokemons .saiba-mais");
   window.addEventListener("load", () => {
@@ -182,11 +182,11 @@ if (url === "/") {
   });//endAddEventListener
 }
 
-if (url === "/") {
+if (url === "/" || url === "/SAP010-data-lovers/src/index.html" || url === "/SAP010-data-lovers/src/") {
   const home = document.querySelector(".home");
   home.style.color = "#00478C"
 }
-if (url === "/statistic") {
+if (url === "/statistic" || url === "/SAP010-data-lovers/src/statistic.html") {
   const curiosidades = document.querySelector(".curiosidades");
   curiosidades.style.color = "#00478C"
 }
