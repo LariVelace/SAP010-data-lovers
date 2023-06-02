@@ -166,9 +166,9 @@ function teste(event) {
   return window.location.href = `cardDetails?id=${event.target.id}`
 }//endTeste
 
-let url = document.URL;
+let url = window.location.pathname;
 console.log(url)
-if (url === "http://localhost:3000/") {
+if (url === "/") {
   console.log(document.URL)
   let cards = document.querySelectorAll("#pokemons .saiba-mais");
   window.addEventListener("load", () => {
@@ -182,19 +182,13 @@ if (url === "http://localhost:3000/") {
   });//endAddEventListener
 }
 
-if (url === "http://localhost:3000/") {
+if (url === "/") {
   const home = document.querySelector(".home");
   home.style.color = "#00478C"
 }
-if (url === "http://localhost:3000/statistic") {
+if (url === "/statistic") {
   const curiosidades = document.querySelector(".curiosidades");
   curiosidades.style.color = "#00478C"
-}
-
-
-if (url === "http://localhost:3000/cardDetails") {
-  const details = document.querySelector(".details");
-  details.style.color = "#00478C"
 }
 
 
