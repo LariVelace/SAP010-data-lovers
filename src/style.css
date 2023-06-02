@@ -648,17 +648,18 @@ a {
 
 #cardDetails {
   background-color: lightblue;
-  padding: 2%;
-  max-width: 800px;
+  max-width: 400px;
   border-radius: 30px;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 #cardHeader {
   display: flex;
   flex-wrap: wrap;
   text-align: left;
+  padding: 5%;
 }
 
 #pokemonName {
@@ -688,7 +689,6 @@ a {
 
 .tab {
   overflow: hidden;
-  border: 1px solid #ccc;
   background-color: #F7F1E3;
 }
 
@@ -700,6 +700,7 @@ a {
   font-family: 'Inter';
   font-size: 15px;
   font-weight: bolder;
+  color: #84817A;
   outline: none;
   cursor: pointer;
   padding: 14px 16px;
@@ -720,7 +721,8 @@ a {
   padding: 6px 12px;
   border: 1px solid #F7F1E3;
   border-top: none;
-
+  width: 100%;
+  box-sizing: border-box;
 }
 
 #About {
@@ -729,6 +731,7 @@ a {
   justify-content: left;
   font-weight: bolder;
   font-family: 'Inter';
+  color: #84817A;
 }
 
 #Base-Stats {
@@ -737,6 +740,16 @@ a {
   justify-content: left;
   font-weight: bolder;
   font-family: 'Inter';
+  color: #84817A;
+}
+
+#Base-Stats table {
+  width: 100%;
+}
+
+#Base-Stats tr td:first-child {
+  text-align: left;
+  width: 20px;
 }
 
 #Attack {
@@ -745,4 +758,5 @@ a {
   justify-content: left;
   font-weight: bolder;
   font-family: 'Inter';
+  color: #84817A;
 }
