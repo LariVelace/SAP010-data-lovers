@@ -49,6 +49,6 @@ Jefferson - 29 anos
 Gostei bastante viu, os Pokémons bem explicados cada um na sua categoria, a gente clica e não trava, da pra entender bastante, clico e vai pra outra página sem demora bem ágil.
 
 Nathan - 29 anos
-
+O site está bem bonito e responsivo no celular, consigo procurar facilmente os pokemons que quero e tenho várias informações interessantes sobre eles.
 
 

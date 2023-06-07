@@ -1,6 +1,7 @@
 import { computeStats } from './data.js';
 import data from './data/pokemon/pokemon.js';
-import {} from 'https://cdn.jsdelivr.net/npm/chart.js';
+//import {} from 'https://cdn.jsdelivr.net/npm/chart.js';
+//import Chart from 'chart.js';
 
 const plotChart = (percentage) => {
 
