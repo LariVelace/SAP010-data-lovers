@@ -33,9 +33,7 @@ export const filterData = (namePokemon, data) => {
 
 
   }//endFor
-  console.log(pokemons)
-
-    return pokemons;
+  return pokemons;
 
 
 }//endFilterData
@@ -137,7 +135,6 @@ export const computeStats = {
     for (const property in count) {
       count[property] = ((count[property] / totalNumberOfPokemons) * 100).toFixed(2);
     }//endFor
-    console.log(count)
     return count;
 
 

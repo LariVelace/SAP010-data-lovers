@@ -2,18 +2,13 @@ import { computeStats, filterData, sortData } from './data.js';
 import data from './data/pokemon/pokemon.js';
 import stylesPokemon from './stylesPokemon.js';
 
-
 const name = document.getElementById("namePokemon");
 
 if (name) {
   name.addEventListener("input", () => {
     document.getElementById("pokemons").innerHTML = "";
-    console.log('eventoInput')
-    let retornoFilterData = filterData(name.value, data);
-    console.log("Console");
-    console.log(filterData(name.value, data))
-    console.log(retornoFilterData);
-    console.log("-----------");
+
+    const retornoFilterData = filterData(name.value, data);
     buildCard(retornoFilterData);
     if (name.value === "") {
       buildCard(data.pokemon);
@@ -86,17 +81,12 @@ const styleCard = (pokemon, stylesPokemon) => {
 styleCard(data.pokemon, stylesPokemon);
 
 const buildCard = (pokemon) => {
-  console.log('chamei buildCard')
 
   document.getElementById("pokemons").innerHTML = "";
 
   const pokemons = document.getElementById("pokemons");
 
-  console.log(pokemon.length)
-
   for (let i = 0; i < pokemon.length; i++) {
-
-    console.log(pokemon[i].name)
 
     if (pokemon[i].colorType.length !== 0 && pokemon[i].imgType.length !== 0) {
 
@@ -160,16 +150,11 @@ if (menuMob) {
 }
 
 function teste(event) {
-  console.log(event);
-  console.log(event.target);
-  console.log(event.target.id);
   return window.location.href = `cardDetails?id=${event.target.id}`
 }//endTeste
 
-let url = window.location.pathname;
-console.log(url)
+const url = window.location.pathname;
 if (url === "/" || url === "/SAP010-data-lovers/src/index.html" || url === "/SAP010-data-lovers/src/") {
-  console.log(document.URL)
   let cards = document.querySelectorAll("#pokemons .saiba-mais");
   window.addEventListener("load", () => {
     buildCard(data.pokemon);
