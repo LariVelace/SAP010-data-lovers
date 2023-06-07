@@ -45,10 +45,10 @@ Recomendamos usuário utilize o navegador do **Google Chrome** para traduzir o c
 
 ## 3. Feedback de teste de usabilidade
 
-***Jefferson - 29 anos
+***Jefferson - 29 anos:
 Gostei bastante viu, os Pokémons bem explicados cada um na sua categoria, a gente clica e não trava, da pra entender bastante, clico e vai pra outra página sem demora bem ágil.
 
-***Nathan - 29 anos
+***Nathan - 29 anos:
 O site está bem bonito e responsivo no celular, consigo procurar facilmente os pokemons que quero e tenho várias informações interessantes sobre eles.
 
 
