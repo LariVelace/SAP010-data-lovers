@@ -122,12 +122,15 @@ const buildCard = (pokemon) => {
         pokemons.appendChild(cardPokemon);
 
       }//endIf
-
     }
-
   }//endFor
-
-
+  
+  const cards = document.querySelectorAll("#pokemons .saiba-mais");
+  if (cards) {
+    cards.forEach(card => {
+      card.addEventListener("click", (e) => openDetails(e))
+    })
+  }//endIf
 }//endBuildCard
 
 
@@ -149,21 +152,14 @@ if (menuMob) {
   })
 }
 
-function teste(event) {
+function openDetails(event) {
   return window.location.href = `cardDetails?id=${event.target.id}`
 }//endTeste
 
 const url = window.location.pathname;
 if (url === "/" || url === "/SAP010-data-lovers/src/index.html" || url === "/SAP010-data-lovers/src/") {
-  let cards = document.querySelectorAll("#pokemons .saiba-mais");
   window.addEventListener("load", () => {
     buildCard(data.pokemon);
-    cards = document.querySelectorAll("#pokemons .saiba-mais");
-    if (cards) {
-      cards.forEach(card => {
-        card.addEventListener("click", (e) => teste(e))
-      })
-    }//endIf
   });//endAddEventListener
 }
 

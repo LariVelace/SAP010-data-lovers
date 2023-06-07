@@ -104,7 +104,7 @@ export const sortData = (data, sortBy, orderBy) => {
 
   for (const pokemon in data.pokemon) {
 
-    if (data.pokemon[pokemon].type.includes(sortBy)) {
+    if (!sortBy || data.pokemon[pokemon].type.includes(sortBy)) {
 
       pokemons.push(data.pokemon[pokemon]);
 
