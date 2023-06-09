@@ -19,7 +19,7 @@ Nosso projeto trata-se de  **uma _página web_** desenvolvida para os fãs de Po
 
 * **Figma** para o desenho do [prótipo de baixa fidelidade](https://www.figma.com/file/JP7AoZGHkFIvsGbb5NyDFc/data-lovers?type=design&node-id=0-1&t=nlMkHIDMdTdB5uDD-0).
 
-* **GitHubPages** para hospedagem de [site](https://helouiseitokazo.github.io/SAP010-data-lovers/) estático .
+* **GitHubPages** para hospedagem de [site](https://larivelace.github.io/SAP010-data-lovers/src/) estático .
 
 * **GitHub** para armazenar o repositório do projeto.
 
